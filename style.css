@@ -120,6 +120,9 @@ li:not(:last-child) {
     margin-right: 16px;
     accent-color: #7749F8;
 }
+.toDoCheck:checked ~ span {
+    text-decoration: line-through;
+}
 li button {
     border: none;
     background: none;

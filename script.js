@@ -6,8 +6,11 @@ const form = document.querySelector("form");
 const listOfTasks = document.querySelector(".tasks-list");
 const tasksMenu = document.querySelector(".todo-list");
 const deleteButtons = document.querySelector(".delete");
+const LS_TODOS_KEY = "todos"
+const savedToDos = JSON.parse(localStorage.getItem(LS_TODOS_KEY))
+console.log(savedToDos)
+let arrTasks = savedToDos ?? [];
 
-let arrTasks = [];
 
 // arrTasks.length = 0
 
@@ -83,9 +86,20 @@ function renderTasks() {
     });
     console.log(arrTasks);
     toDoMenu();
+    const todosJson = JSON.stringify(arrTasks)
+    setToLocalStorage(LS_TODOS_KEY, todosJson)
 }
 renderTasks();
+
+function setToLocalStorage(key, value) {
+    localStorage.setItem(key, value)
+}
+
 
 btnDeleteCompleted.addEventListener("click", deleteCompleted);
 form.addEventListener("submit", addTask);
 btnDeleteAll.addEventListener("click", deleteAll);
+
+
+
+
