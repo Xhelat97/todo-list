@@ -8,19 +8,29 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
             rel="stylesheet"
         />
     </head>
     <body>
         <h1>ToDo List</h1>
-        <div class="input-wrapper">
-            <input
-                class="input-tasks"
-                type="text"
-                placeholder="Сделать удаление завершенных и всех"
-            />
-            <button class="add-btn">Добавить</button>
+        <div class="todo">
+            <form class="input-form">
+                <input
+                    class="input-tasks"
+                    type="text"
+                    placeholder="Сделать удаление завершенных и всех"
+                />
+                <button class="add-btn">Добавить</button>
+            </form>
+            <div class="line"></div>
+            <div class="todo-list">
+                <ul class="tasks-list"></ul>
+            </div>
+            <div class="delete">
+                <button class="delete1">Удалить завершенные</button>
+                <button class="delete2">Удалить все</button>
+            </div>
         </div>
         <script src="script.js"></script>
     </body>

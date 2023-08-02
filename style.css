@@ -5,7 +5,15 @@
 body {
     margin: 0 auto;
 }
-
+span {
+    color: #54595e;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin-right: 43px;
+    hyphens: auto;
+}
 h1 {
     font-family: "Inter", sans-serif;
     font-size: 58px;
@@ -14,31 +22,29 @@ h1 {
     line-height: normal;
     text-align: center;
     margin-top: 80px;
+    margin-bottom: 33px;
 }
-.input-wrapper {
+.input-form {
     margin: 0 auto;
-    margin-top: 33px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 594px;
     height: 87px;
-    border-radius: 16px;
     background: #fff;
-    box-shadow: 0px 8px 35px 0px rgba(0, 0, 0, 0.16);
 }
 .input-tasks {
+    padding-left: 13px;
     width: 356px;
     height: 38px;
     border-radius: 4px;
     border: 1px solid #ced4da;
     background: #fff;
     margin-right: 24px;
-    color:  #54595E;
-font-family: 'Inter',sans-serif;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
+    color: #54595e;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
 }
 .add-btn {
     width: 166px;
@@ -53,3 +59,70 @@ font-weight: 400;
     box-shadow: none;
     border: none;
 }
+.todo-list {
+    margin: 0 auto;
+    padding: 32px 24px;
+    background: #fff;
+}
+li {
+    list-style-type: none;
+    display: flex;
+}
+li:not(:last-child) {
+    margin-bottom: 26px;
+}
+.delete {
+    margin: 0 auto;
+    padding: 18px 24px;
+    display: flex;
+    justify-content: space-between;
+    background: #f5f5f5;
+}
+.delete1 {
+    width: 214px;
+    height: 39px;
+    border-radius: 4px;
+    border:none;
+    background: #6c757d;
+    color: #fff;
+    text-align: center;
+    font-family: "Inter",sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    
+}
+.delete2 {
+    width: 131px;
+    height: 39px;
+    border-radius: 4px;
+    border:none;
+    background: #dc3545;
+    color: #fff;
+    text-align: center;
+    font-family: "Inter",sans-serif;
+    font-size: 16px;
+    font-style: normal;
+}
+.todo {
+    margin: 0 auto;
+    border-radius: 16px;
+    overflow: hidden;
+    width: 594px;
+    box-shadow: 0px 8px 35px 0px rgba(0, 0, 0, 0.16);
+}
+.line {
+    width: 594px;
+    height: 1px;
+    background: #dee2e6;
+}
+
+.toDoCheck {
+    margin-right: 16px;
+    accent-color: #7749F8;
+}
+li button {
+    border: none;
+    background: none;
+    margin-left: auto;
+}
+
